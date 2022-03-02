@@ -1,0 +1,120 @@
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+} 
+
+.grid {
+    max-width: 960px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+}
+
+.card {
+    position: relative;
+    -webkit-transition: all .4s linear;
+    -o-transition: all .4s linear;
+    transition: all .4s linear;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    margin: 5px;
+}
+
+.card,
+.back,
+.front {
+    height: 150px;
+    width: 150px;
+}
+
+.back,
+.front {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.front {
+    background-color: cadetblue;
+    border: 4px solid black;
+}
+
+.back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.selected {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.StateBar {
+    border: 2px solid black;
+    background-color: cadetblue;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 5px;
+
+}
+
+#spanPoint,
+#timer{
+    padding: 10px;
+    color: white;
+    font-size:30px; 
+    width: 60px;
+}
+#game{
+    border: 4px solid black;
+    background-color: blanchedalmond;
+ }
+ #uyari {
+    display: none;
+    margin: auto;
+    border: 5px solid black;
+    border-radius: 15px;
+    width: 200px;
+    height: 250px;
+    background-color: gray;
+}
+.hide{
+    visibility: hidden;
+}
+    
+
+.timewarning,
+.timewrite,
+.pointGame  {
+    text-align: center;
+    color:white;
+    font-size: larger;
+
+}
+
+.button {
+    left: 25px;
+    position: relative;
+    font-size: large;
+    border: solid 5px black;
+    border-radius: 10px;
+    
+
+}
+
